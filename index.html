@@ -9,16 +9,20 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Sliver Home | أثاث وديكور حسب الطلب">
 <meta property="og:description" content="بيتك، على مقاسك. كنب، مجالس، غرف نوم، ستائر، سجاد وخزائن. بوشر، سلطنة عُمان.">
-<!-- DEPLOY STEP: replace https://DEPLOY-URL/ in og:url, og:image and the JSON-LD url with the live absolute URL -->
-<meta property="og:url" content="https://DEPLOY-URL/">
-<meta property="og:image" content="https://DEPLOY-URL/assets/hero-ending.jpg">
+<!-- Live address (GitHub Pages). If the site moves to its own domain, update og:url, og:image and the JSON-LD url/image. -->
+<meta property="og:url" content="https://ghassen-mer.github.io/Silver-Home/">
+<meta property="og:image" content="https://ghassen-mer.github.io/Silver-Home/assets/hero-ending.jpg">
+<meta property="og:image:width" content="1248">
+<meta property="og:image:height" content="1664">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://ghassen-mer.github.io/Silver-Home/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23F2ECE3'/%3E%3Cpath d='M9 33 32 13l23 20' fill='none' stroke='%2319203A' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M17 27v25h37' fill='none' stroke='%2319203A' stroke-width='6' stroke-linecap='round'/%3E%3Ctext x='24' y='47' font-family='Georgia,serif' font-size='19' font-weight='700' fill='%23E8861C'%3ES%3C/text%3E%3Ctext x='35' y='47' font-family='Georgia,serif' font-size='19' font-weight='700' fill='%23D8361F'%3EH%3C/text%3E%3C/svg%3E">
 <link rel="apple-touch-icon" href="assets/logo-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=Reem+Kufi:wght@400;500;600&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FurnitureStore","name":"Sliver Home","description":"تصميم وتنفيذ الأثاث والديكور حسب الطلب: كنب، ستائر، سجاد، خزائن، غرف نوم","telephone":"+96899452190","url":"https://DEPLOY-URL/","image":"https://DEPLOY-URL/assets/hero-ending.jpg","address":{"@type":"PostalAddress","addressLocality":"Bausher","addressRegion":"Muscat","addressCountry":"OM"},"geo":{"@type":"GeoCoordinates","latitude":23.571627,"longitude":58.409576},"areaServed":"OM"}
+{"@context":"https://schema.org","@type":"FurnitureStore","name":"Sliver Home","description":"تصميم وتنفيذ الأثاث والديكور حسب الطلب: كنب، ستائر، سجاد، خزائن، غرف نوم","telephone":"+96899452190","url":"https://ghassen-mer.github.io/Silver-Home/","image":"https://ghassen-mer.github.io/Silver-Home/assets/hero-ending.jpg","address":{"@type":"PostalAddress","addressLocality":"Bausher","addressRegion":"Muscat","addressCountry":"OM"},"geo":{"@type":"GeoCoordinates","latitude":23.571627,"longitude":58.409576},"areaServed":"OM"}
 </script>
 <style>
 :root{
@@ -53,7 +57,7 @@ main:focus{outline:none}
 /* ---------- the room: one fixed environment layer ---------- */
 .env{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;background:var(--canvas)}
 .env::before{content:"";position:absolute;width:110vmax;height:110vmax;left:-35vmax;top:-45vmax;background:radial-gradient(closest-side,rgba(255,238,212,.75),rgba(255,238,212,0));animation:sun 84s ease-in-out -22s infinite alternate;will-change:transform}
-.env::after{content:"";position:absolute;inset:0;opacity:.42;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .4 0 0 0 0 .34 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E")}
+.env::after{content:"";position:absolute;inset:0;opacity:.42;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .4 0 0 0 0 .34 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E")}
 @keyframes sun{to{transform:translate3d(70vw,60vh,0)}}
 
 /* ---------- nav ---------- */
@@ -101,6 +105,8 @@ main:focus{outline:none}
 .b3 .w{--kc:clamp(0,(var(--k,0) - var(--th,0))*3,1);opacity:var(--kc);transform:translateX(calc((1 - var(--kc))*var(--jx,40px)))}
 .b4 .w{--kc:clamp(0,(var(--k,0) - var(--th,0))*2.6,1);opacity:var(--kc);transform:translateX(calc((1 - var(--kc))*var(--jx,0px)))}
 .b4 .cta{--kb:clamp(0,(var(--k,0) - .72)*5,1);opacity:var(--kb);transform:translateY(calc((1 - var(--kb))*16px));display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.b4 .cta .sm{display:none}
+.b4 .cta [dir="ltr"]{unicode-bidi:isolate}
 
 .archcol{position:relative;display:grid;place-items:center;z-index:2;animation:archin 1.5s var(--e1) .15s both}
 @keyframes archin{from{opacity:0;transform:translateY(34px) scale(.965)}}
@@ -111,15 +117,15 @@ main:focus{outline:none}
 .still{opacity:0;transition:opacity .9s var(--e1);z-index:2}
 .still.on{opacity:1}
 .static-img{display:none}
-.arch video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .9s var(--e1);transform:translateZ(0);z-index:3}
-.stage.video-ready .arch video{opacity:1}
+.arch .film{position:absolute;inset:0;width:100%;height:100%;display:block;opacity:0;transition:opacity .9s var(--e1);transform:translateZ(0);z-index:3}
+.stage.video-ready .arch .film{opacity:1}
 .loader{position:absolute;left:50%;top:56%;width:52px;height:52px;margin:-26px 0 0 -26px;color:rgba(248,244,238,.92);z-index:7;transition:opacity .6s var(--e1);filter:drop-shadow(0 2px 6px rgba(20,12,6,.45))}
 .loader circle.bg{opacity:.28}
 .stage.video-ready .loader,.stage.video-failed .loader{opacity:0}
 .arch-line{position:absolute;top:-15px;left:-15px;width:calc(100% + 30px);height:calc(100% + 15px);overflow:visible;pointer-events:none;z-index:1}
 .arch-line path{fill:none;stroke:var(--line);stroke-width:1.2;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 2.8s var(--e2) .5s}
 .stage.ready .arch-line path{stroke-dashoffset:0}
-.glow{position:absolute;left:50%;top:50%;width:calc(var(--ah,76vh)*1.55);height:calc(var(--ah,76vh)*1.25);transform:translate(-50%,-50%);opacity:.5;filter:blur(26px);-webkit-mask-image:radial-gradient(closest-side,#000 25%,transparent 100%);mask-image:radial-gradient(closest-side,#000 25%,transparent 100%);pointer-events:none;z-index:0}
+.glow{position:absolute;left:50%;top:50%;width:calc(var(--ah,76vh)*1.55);height:calc(var(--ah,76vh)*1.25);transform:translate(-50%,-50%);opacity:.5;-webkit-mask-image:radial-gradient(closest-side,#000 25%,transparent 100%);mask-image:radial-gradient(closest-side,#000 25%,transparent 100%);pointer-events:none;z-index:0}
 .ghost{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:0;height:0;z-index:0;pointer-events:none}
 .ghost span{position:absolute;left:50%;top:50%;font-family:var(--font-d);font-weight:500;font-size:clamp(130px,17vw,290px);line-height:1;white-space:nowrap;color:rgba(25,32,58,.06);opacity:0;transform:translate(-50%,-50%)}
 /* dimension lines */
@@ -170,8 +176,10 @@ main:focus{outline:none}
   .band{top:0;transform:none}
   .band h1,.band h2{font-size:clamp(25px,7.2vw,38px);margin:.3em 0 .35em;max-width:16ch}
   .band .sub{font-size:15px;line-height:1.7}
-  .b4 .cta{margin-top:16px;gap:10px}
-  .b4 .cta .btn{padding:13px 18px;font-size:15px}
+  /* one even row of two buttons: nothing hangs below, nothing gets cut at the screen edge */
+  .b4 .cta{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px;margin-top:18px;max-width:420px}
+  .b4 .cta .btn{width:100%;min-height:48px;padding:12px 10px;font-size:15.5px;gap:8px}
+  .b4 .cta .btn svg{width:19px;height:19px}
   .ghost span{font-size:30vw}
   .cue{display:none}
   .kick{font-size:13px}
@@ -454,6 +462,8 @@ footer{background:var(--walnut-2);color:var(--on-walnut-2);padding:56px clamp(20
   .brand img{height:38px}
   .nav .btn-sm span{display:none}
   .nav .btn-sm{padding:11px}
+  .b4 .cta .lg{display:none}
+  .b4 .cta .sm{display:inline}
   .fab-wa{width:56px;height:56px;padding:0;bottom:14px;inset-inline-end:14px}
   .fab-wa span{display:none}
   .fab-wa svg{width:26px;height:26px}
@@ -467,7 +477,7 @@ footer{background:var(--walnut-2);color:var(--on-walnut-2);padding:56px clamp(20
   .band{opacity:0!important;visibility:hidden!important}
   .band.b4{opacity:1!important;visibility:visible!important;--k:1!important}
   .static-img{display:block;background-image:url("assets/hero-ending.jpg");z-index:5}
-  .arch video,.loader,.cue,.dim,.mote,.glow{display:none!important}
+  .arch .film,.loader,.cue,.dim,.mote,.glow{display:none!important}
   .ghost span{opacity:0!important}
   .ghost span:nth-child(4){opacity:1!important}
   .rooms li{opacity:.5!important}
@@ -487,7 +497,7 @@ footer{background:var(--walnut-2);color:var(--on-walnut-2);padding:56px clamp(20
 }
 body.paused *,body.paused *::before,body.paused *::after{animation-play-state:paused!important}
 </style>
-<noscript><style>.band.b1{opacity:1;visibility:visible;--k:1}.rv>*{opacity:1;transform:none}.arch-line path{stroke-dashoffset:0}.poster{background-image:url("assets/hero-poster.jpg")}</style></noscript>
+<noscript><style>.band.b1{opacity:1;visibility:visible;--k:1}.rv>*{opacity:1;transform:none}.arch-line path{stroke-dashoffset:0}.poster{background-image:url("assets/hero-poster.webp")}</style></noscript>
 </head>
 <body>
 <div class="env" aria-hidden="true"></div>
@@ -537,14 +547,14 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
         <h2 data-split="part" data-i18n="b4.h">بيتك، على مقاسك.</h2>
         <p class="sub" data-i18n="b4.p">أرسل صورة المكان على واتساب، ونرجع لك بفكرة وسعر واضح.</p>
         <div class="cta">
-          <a class="btn btn-accent" data-wa="general" href="https://api.whatsapp.com/send?phone=96899452190" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="b4.cta">اطلب تصميمك على واتساب</span></a>
+          <a class="btn btn-accent" data-wa="general" href="https://api.whatsapp.com/send?phone=96899452190" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg><span class="lg" data-i18n="b4.cta">اطلب تصميمك على واتساب</span><span class="sm" data-i18n="nav.wa">واتساب</span></a>
           <a class="btn btn-ghost" href="tel:+96899452190" aria-label="اتصل 99452190" data-i18n-al="b4.call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.6 3.5h2.6l1.4 4.2-2 1.4a11 11 0 0 0 6.3 6.3l1.4-2 4.2 1.4v2.6a2 2 0 0 1-2.2 2A16.6 16.6 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z"/></svg><span dir="ltr">99452190</span></a>
         </div>
       </div>
     </div>
 
     <div class="archcol" aria-hidden="true">
-      <canvas class="glow" width="8" height="10"></canvas>
+      <canvas class="glow" width="4" height="5"></canvas>
       <div class="ghost"><span data-i18n="g1">الصالة</span><span data-i18n="g2">المجلس</span><span data-i18n="g3">النوم</span><span data-i18n="g4">الستائر</span></div>
       <div class="arch-wrap" id="archWrap">
         <svg class="arch-line" id="archLine" preserveAspectRatio="none"><path pathLength="1" d=""/></svg>
@@ -552,7 +562,7 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
           <div class="poster"></div>
           <div class="still"></div><div class="still"></div><div class="still"></div><div class="still"></div>
           <div class="static-img"></div>
-          <video id="heroVideo" preload="none" muted playsinline disablepictureinpicture aria-hidden="true" tabindex="-1"></video>
+          <canvas class="film" id="heroFilm" aria-hidden="true"></canvas>
           <svg class="loader" viewBox="0 0 48 48"><circle class="bg" cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="126" transform="rotate(-90 24 24)" style="stroke-dashoffset:var(--ld,126)"/></svg>
         </div>
         <div class="dim dim-v"><div class="bar"></div><span class="lab" id="dimV"></span></div>
@@ -940,15 +950,17 @@ function refreshWa(){
 $('#langBtn').addEventListener('click', () => { const nl = lang === 'ar' ? 'en' : 'ar'; store.set('sh-lang', nl); applyLang(nl); });
 
 /* ================= hero: the measured arch ================= */
-const hero = $('#top'), stage = $('#stage'), video = $('#heroVideo'), poster = $('.poster', stage);
+const hero = $('#top'), stage = $('#stage'), film = $('#heroFilm'), fctx = film.getContext('2d', { alpha:false }), poster = $('.poster', stage);
 const archWrap = $('#archWrap'), loader = $('.loader', stage), glow = $('.glow', stage), gctx = glow.getContext('2d', { willReadFrequently:false });
 const stills = $$('.still', stage), ghosts = $$('.ghost span', stage), roomsLi = $$('.rooms li', stage), cue = $('.cue', stage);
 const dimV = $('.dim-v', stage), dimH = $('.dim-h', stage), dimVLab = $('#dimV'), dimHLab = $('#dimH');
 const bands = $$('.band', stage).map(el => ({ el, a:+el.dataset.a, b:+el.dataset.b, ramp:+(el.dataset.ramp || 0), op:-1, k:-1, vis:null, gy:null }));
 const PHONE = matchMedia('(max-width: 720px)').matches;
-const VIDEO_URL = PHONE ? 'assets/hero-scrub-m.mp4' : 'assets/hero-scrub.mp4';
-const VIDEO_BYTES = PHONE ? 3711251 : 7572768;
-const POSTER_URL = PHONE ? 'assets/hero-poster-m.jpg' : 'assets/hero-poster.jpg';
+// The film ships as a packed frame sequence, not a video: painting a decoded frame is instant,
+// while seeking a video makes the browser decode on every scroll step (the source of scrub lag).
+const FRAMES_URL = PHONE ? 'assets/hero-frames-m.bin' : 'assets/hero-frames.bin';
+const FRAMES_BYTES = PHONE ? 2059049 : 2861178;   // fallback for the ring when Content-Length is missing
+const POSTER_URL = PHONE ? 'assets/hero-poster-m.webp' : 'assets/hero-poster.webp';
 let heroTop = 0, heroRange = 1;
 function measureHero(){ heroTop = hero.offsetTop; heroRange = Math.max(1, hero.offsetHeight - innerHeight); }
 const heroProgress = () => clamp((scrollY - heroTop) / heroRange, 0, 1);
@@ -1009,39 +1021,51 @@ function updateCaptions(p, now){
   if (Math.abs(co - cueOp) > .01 || (co === 0 && cueOp !== 0)){ cue.style.opacity = co.toFixed(2); cueOp = co; }
 }
 
-/* seek gating */
-let seekBusy = false, pendingTime = null;
-function requestSeek(time){
-  if (!video.duration || failed) return;
-  if (seekBusy){ pendingTime = time; return; }
-  seekBusy = true;
-  video.currentTime = time;
+/* the frame painter: two decoded frames blended by the fractional position */
+let frames = [], FN = 0, FW = PHONE ? 600 : 720, FH = PHONE ? 800 : 960, painted = -1, loadedCount = 0, lastGlowAt = 0, repaintQueued = false;
+function sizeFilm(){
+  const dpr = Math.min(devicePixelRatio || 1, 2);
+  const w = Math.max(1, Math.min(Math.round(archWrap.offsetWidth * dpr), FW));   // never paint above the source size
+  const h = Math.round(w * FH / FW);
+  if (film.width !== w || film.height !== h){ film.width = w; film.height = h; if (FN) paint(shown * (FN - 1), true); }
 }
-let lastGlowAt = 0;
-video.addEventListener('seeked', () => {
-  seekBusy = false;
+function paint(pos, force){
+  if (!FN || failed) return;
+  if (!force && Math.abs(pos - painted) < .015) return;
+  let a = Math.floor(pos), b = Math.ceil(pos);
+  while (a >= 0 && !frames[a]) a--;          // nearest frames that have arrived so far
+  while (b < FN && !frames[b]) b++;
+  if (a < 0 && b >= FN) return;
+  if (a < 0) a = b; else if (b >= FN) b = a;
+  const W = film.width, H = film.height;
+  fctx.globalAlpha = 1; fctx.drawImage(frames[a], 0, 0, W, H);
+  const t = b === a ? 0 : (pos - a) / (b - a);
+  if (t > .01){ fctx.globalAlpha = t; fctx.drawImage(frames[b], 0, 0, W, H); fctx.globalAlpha = 1; }
+  painted = pos;
   const now = performance.now();
-  if (now - lastGlowAt > 110){ lastGlowAt = now; try { gctx.drawImage(video, 0, 0, 8, 10); } catch(e){} }
-  if (pendingTime !== null){ const tt = pendingTime; pendingTime = null; requestSeek(tt); }
-});
-video.addEventListener('error', () => { seekBusy = false; pendingTime = null; if (video.src) failVideo(); });
+  if (now - lastGlowAt > 110){ lastGlowAt = now; try { gctx.drawImage(film, 0, 0, 4, 5); } catch(e){} }
+}
+function queueRepaint(){
+  if (repaintQueued) return; repaintQueued = true;
+  requestAnimationFrame(() => { repaintQueued = false; paint(shown * (FN - 1), true); });
+}
 
 /* the lerp loop that rests */
 let target = 0, shown = 0, rafId = null, lastTick = 0, heroOnScreen = true, scrubOn = false;
 function tick(now){
   const dt = Math.min(100, now - (lastTick || now)); lastTick = now;
-  const k = 0.2;   // follow speed: higher = tighter to the scroll, lower = floatier
+  const k = 0.24;   // follow speed: higher = tighter to the scroll, lower = floatier
   shown += (target - shown) * (1 - Math.pow(1 - k, dt / 16.667));
   if (Math.abs(target - shown) < .0005){ shown = target; rafId = null; lastTick = 0; }
   else rafId = requestAnimationFrame(tick);
-  if (video.duration) requestSeek(shown * video.duration);
+  paint(shown * (FN - 1));
   updateCaptions(shown, now);
 }
 function onScroll(){
   target = heroProgress();
   if (rafId === null && heroOnScreen && scrubOn) rafId = requestAnimationFrame(tick);
 }
-function drawFrame(force){ shown = target = heroProgress(); updateCaptions(shown); if (force && video.duration) requestSeek(shown * video.duration); }
+function drawFrame(force){ shown = target = heroProgress(); updateCaptions(shown); if (force) paint(shown * (FN - 1), true); }
 
 /* first band assembles on load, then hands over to scroll */
 function loadRamp(){
@@ -1062,54 +1086,66 @@ function sizeArchLine(){
   $('path', svg).setAttribute('d', 'M0.6,' + h + ' L0.6,' + r + ' A' + (r - .6) + ',' + (r - .6) + ' 0 0 1 ' + (w - .6) + ',' + r + ' L' + (w - .6) + ',' + h);
 }
 
-/* the Blob loader with an honest ring */
+/* the frame loader: one streamed file, frames decoded as their bytes arrive, behind an honest ring */
 let heroInit = false;
 function initHeroOnce(){
   if (heroInit) return; heroInit = true;
   poster.style.backgroundImage = "url('" + POSTER_URL + "')";
   const img = new Image();
   let started = false;
-  const start = () => { if (started) return; started = true; loadHeroBlob().catch(failVideo); };
-  img.onload = () => { try { gctx.drawImage(img, 0, 0, 8, 10); } catch(e){} start(); };
+  const start = () => { if (started) return; started = true; loadFrames().catch(() => { if (loadedCount === 0) failVideo(); else stage.classList.add('video-ready'); }); };
+  img.onload = () => { try { gctx.drawImage(img, 0, 0, 4, 5); } catch(e){} start(); };
   img.onerror = start; img.src = POSTER_URL;
   setTimeout(start, 4000);
 }
-async function loadHeroBlob(){
+function decodeFrame(idx, bytes){
+  const blob = new Blob([bytes], { type:'image/webp' });
+  const done = bm => {
+    if (failed) return;
+    frames[idx] = bm; loadedCount++;
+    if (!stage.classList.contains('video-ready')){ sizeFilm(); paint(shown * (FN - 1), true); stage.classList.add('video-ready'); }
+    else queueRepaint();
+  };
+  const viaImg = () => { const im = new Image(); im.onload = () => done(im); im.src = URL.createObjectURL(blob); };
+  if (window.createImageBitmap) createImageBitmap(blob).then(done, viaImg); else viaImg();
+}
+async function loadFrames(){
   if (location.protocol === 'file:') throw new Error('file');
   const ctrl = new AbortController();
   let watchdog = setTimeout(() => ctrl.abort(), 20000);
-  const res = await fetch(VIDEO_URL, { priority:'low', signal:ctrl.signal });
+  const res = await fetch(FRAMES_URL, { priority:'low', signal:ctrl.signal });
   if (!res.ok || !res.body) throw new Error('http ' + res.status);
-  const total = Number(res.headers.get('Content-Length')) || VIDEO_BYTES;
-  const reader = res.body.getReader(); const chunks = []; let got = 0, lastRing = 0;
+  const total = Number(res.headers.get('Content-Length')) || FRAMES_BYTES;
+  const reader = res.body.getReader();
+  let buf = new Uint8Array(total), got = 0, lastRing = 0, head = null, base = 0, next = 0;
   for (;;){
     const { done, value } = await reader.read();
     if (done) break;
-    clearTimeout(watchdog); watchdog = setTimeout(() => ctrl.abort(), 20000);
-    chunks.push(value); got += value.length;
+    clearTimeout(watchdog); watchdog = setTimeout(() => ctrl.abort(), 20000);   // 20s with no bytes aborts
+    if (got + value.length > buf.length){ const nb = new Uint8Array(Math.max(buf.length * 2, got + value.length)); nb.set(buf.subarray(0, got)); buf = nb; }
+    buf.set(value, got); got += value.length;
     const frac = Math.min(1, got / total), now = performance.now();
     if (now - lastRing > 100 || frac === 1){ lastRing = now; loader.style.setProperty('--ld', Math.round(126 * (1 - frac))); }
+    if (!head && got >= 4){
+      const hl = (buf[0] | buf[1] << 8 | buf[2] << 16 | buf[3] << 24) >>> 0;
+      if (got >= 4 + hl){
+        head = JSON.parse(new TextDecoder().decode(buf.subarray(4, 4 + hl)));
+        base = 4 + hl; FN = head.n; FW = head.w; FH = head.h; frames = new Array(FN).fill(null); sizeFilm();
+      }
+    }
+    if (head) while (next < head.f.length){
+      const [idx, off, len] = head.f[next];
+      if (base + off + len > got) break;
+      decodeFrame(idx, buf.slice(base + off, base + off + len)); next++;
+    }
   }
   clearTimeout(watchdog);
   loader.style.setProperty('--ld', 0);
-  video.src = URL.createObjectURL(new Blob(chunks, { type:'video/mp4' }));
-  video.load();
-  video.addEventListener('canplay', () => {
-    let done = false;
-    const go = () => { if (done) return; done = true; requestSeek(heroProgress() * video.duration); stage.classList.add('video-ready'); };
-    if (matchMedia('(pointer: coarse)').matches){
-      // touch browsers paint seeked frames reliably only after one play; never wait on it for long
-      setTimeout(() => { if (!done){ try { video.pause(); } catch(e){} go(); } }, 1200);
-      const pr = video.play();
-      if (pr && pr.then) pr.then(() => { video.pause(); go(); }).catch(go); else go();
-    }
-    else go();
-  }, { once:true });
+  if (!head || next < head.f.length) throw new Error('incomplete');
 }
 function failVideo(){
   if (failed) return; failed = true;
   stage.classList.add('video-failed');
-  video.removeAttribute('src');
   stills.forEach((s, i) => { s.style.backgroundImage = "url('assets/img/room-" + (i + 1) + ".jpg')"; });
   stillOn = -1; updateCaptions(heroProgress());
 }
@@ -1291,7 +1327,7 @@ addEventListener('scroll', checkPast, { passive:true });
 document.addEventListener('visibilitychange', () => { document.body.classList.toggle('paused', document.hidden); if (!document.hidden) kickRing(); });
 reduced.addEventListener('change', e => { if (e.matches){ disableScrub(); cx = cy = tx = ty = 0; archWrap.style.transform = ''; } else applyHeroMode(); });
 let rT = null;
-addEventListener('resize', () => { clearTimeout(rT); rT = setTimeout(() => { measureHero(); sizeArchLine(); if (scrubOn) drawFrame(true); }, 120); });
+addEventListener('resize', () => { clearTimeout(rT); rT = setTimeout(() => { measureHero(); sizeArchLine(); sizeFilm(); if (scrubOn) drawFrame(true); }, 120); });
 addEventListener('load', () => { measureHero(); if (scrubOn) drawFrame(true); });
 if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { measureHero(); sizeArchLine(); });
 
